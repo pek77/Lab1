@@ -68,11 +68,11 @@ spec:
   type: NodePort
   ports:
     - port: 9080
-      nodePort: 31001
+      # nodePort: 31001
   selector:
     app: portfolio
----   
-#Configure the ingress 
+---
+#Configure the ingress
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
